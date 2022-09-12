@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>三角形</title>
+    <style type="text/css">
+      div {
+        margin: 10px;
+      }
+      .t01 {
+        width: 50px;
+        height: 50px;
+        border: 3px solid;
+        border-color: #f00 #0f0 #00f #ff0;
+      }
+      .t02 {
+        width: 50px;
+        height: 50px;
+        border: 25px solid;
+        border-color: #f00 #0f0 #00f #ff0;
+      }
+      .t03 {
+        width: 0;
+        height: 0;
+        border: 25px solid;
+        border-color: #f00 #0f0 #00f #ff0;
+      }
+      .t04 {
+        width: 0;
+        height: 0;
+        border: 25px solid;
+        border-color: #f00 transparent transparent transparent;
+      }
+      .t05 {
+        width: 0;
+        height: 0;
+        border: 25px solid;
+        border-color: transparent transparent transparent #fbb034;
+      }
+      /* 應用在按鈕上 Start */
+      .btn-more {
+        background-color: #00f;
+        color: #fff;
+        /* display: block; */
+        padding: 8px 25px;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 16px;
+        position: relative;
+      }
+      .btn-more:hover,
+      .btn-more:active,
+      .btn-more:focus {
+        background-color: #f00;
+      }
+      .btn-more:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 6px 12px;
+        border-color: transparent transparent transparent #fff;
+        position: absolute;
+        right: 15%;
+        top: calc(50% - 6px);
+      }
+      /* 應用在按鈕上 End */
+      /* 應用在對話氣泡上 Start */
+      .dialog {
+        color: #000;
+        display: block;
+        background-color: #ecf5ff;
+        border: 2px solid;
+        border-color: #c4e1ff;
+        border-radius: 10px;
+        line-height: 60px;
+        position: relative;
+        text-align: center;
+        width: 180px;
+      }
+      .dialog:before,
+      .dialog:after {
+        border: solid transparent;
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+      }
+      .dialog:after {
+        border-width: 10px 10px 0 10px;
+        border-top-color: #ecf5ff;
+        top: 60px;
+        right: 20px;
+      }
+      .dialog:before {
+        border-width: 13px 13px 0 13px;
+        border-top-color: #c4e1ff;
+        top: 60px;
+        right: 17px;
+      }
+      /* 應用在對話氣泡上 End */
+      .angle1 {
+        width: 0;
+        height: 0;
+        border-left: 40px solid #f00;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+      }
+      .angle2 {
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-bottom: 30px solid #f00;
+      }
+      .angle3 {
+        width: 0;
+        height: 0;
+        border-right: 30px solid transparent;
+        border-bottom: 40px solid #f00;
+      }
+      .angle4 {
+        width: 100px;
+        height: 100px;
+        transform: rotate(45deg);
+        background-color: #f00;
+      }
+      /* 第二種做法 */
+      .angle5 {
+        width: 70px;
+        height: 32px;
+        overflow: hidden;
+        position: relative;
+      }
+      .angle5:before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: #666;
+        transform: translate(10px, 10px) rotate(45deg);
+      }
+      .circle1 {
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        border-radius: 50%;
+        border: 2px solid #f00;
+      }
+      .circle2 {
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        /* 左上 右上 右下 左下 */
+        border-radius: 5px 5px 50% 50%;
+        border: 2px solid #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 顏色的順序 : 上 右 下 左 -->
+    <div class="t01"></div>
+    <div class="t02"></div>
+    <div class="t03"></div>
+    <div class="t04"></div>
+    <div class="t05"></div>
+    <!-- 按鈕 -->
+    <div class="btn-more">more</div>
+    <!-- 對話筐 -->
+    <div class="dialog">哈囉你好 :)</div>
+    <!-- Amos -->
+    <div class="angle1"></div>
+    <div class="angle2"></div>
+    <div class="angle3"></div>
+    <div class="angle4"></div>
+    <div class="angle5"></div>
+    <!-- 圓 -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </body>
+</html>
