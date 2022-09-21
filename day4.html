@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body {
+        padding: 100px 0;
+      }
+      .wrap {
+        width: 1200px;
+        margin: auto;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+        background-color: #ccc;
+      }
+      .item .pic {
+        width: 55%;
+        flex-shrink: 0;
+      }
+      .item .pic img {
+        width: 100%;
+        vertical-align: middle;
+      }
+      .item .txt {
+        width: 55%;
+        background-color: aqua;
+        flex-shrink: 0;
+      }
+      .item > :first-child {
+        margin-right: -10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- item 1 -->
+      <div class="item">
+        <div class="pic">
+          <img src="https://picsum.photos/600/350/?random=10" />
+        </div>
+        <div class="txt">
+          <h2>金魚都懂的切版</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+            illum? Provident voluptatibus perspiciatis maxime ducimus dolorem.
+            Autem nesciunt animi explicabo vitae exercitationem. Eligendi
+            adipisci officia nisi est unde aliquid! Perspiciatis!
+          </p>
+        </div>
+      </div>
+      <!-- item 2 -->
+      <div class="item">
+        <div class="txt">
+          <h2>金魚都懂的切版</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+            illum? Provident voluptatibus perspiciatis maxime ducimus dolorem.
+            Autem nesciunt animi explicabo vitae exercitationem. Eligendi
+            adipisci officia nisi est unde aliquid! Perspiciatis!
+          </p>
+        </div>
+        <div class="pic">
+          <img src="https://picsum.photos/600/350/?random=20" />
+        </div>
+      </div>
+      <!-- item 3 -->
+      <div class="item">
+        <div class="pic">
+          <img src="https://picsum.photos/600/350/?random=30" />
+        </div>
+        <div class="txt">
+          <h2>金魚都懂的切版</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+            illum? Provident voluptatibus perspiciatis maxime ducimus dolorem.
+            Autem nesciunt animi explicabo vitae exercitationem. Eligendi
+            adipisci officia nisi est unde aliquid! Perspiciatis!
+          </p>
+        </div>
+      </div>
+      <!-- item 4 -->
+      <div class="item">
+        <div class="txt">
+          <h2>金魚都懂的切版</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia,
+            illum? Provident voluptatibus perspiciatis maxime ducimus dolorem.
+            Autem nesciunt animi explicabo vitae exercitationem. Eligendi
+            adipisci officia nisi est unde aliquid! Perspiciatis!
+          </p>
+        </div>
+        <div class="pic">
+          <img src="https://picsum.photos/600/350/?random=40" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

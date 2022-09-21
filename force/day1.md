@@ -63,7 +63,6 @@ h1 ~ h6 : 文章標題
 title : 頁面標題
 caption : 表格標題
 
-
 強調
 重要性強調：strong, em, del, ins // 資料重要 : 粗體, 斜體, 刪除
 外觀變化：b, i, s
